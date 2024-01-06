@@ -5,6 +5,11 @@ import (
 	"time"
 )
 
+type CreateTodoRequest struct {
+	Task string `json:"task"`
+}
+
+type UpdateTodoRequest = CreateTodoRequest
 type Todo struct {
 	ID        int       `json:"id"`
 	Task      string    `json:"task"`
